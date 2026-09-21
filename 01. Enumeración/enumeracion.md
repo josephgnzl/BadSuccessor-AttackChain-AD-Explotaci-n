@@ -37,3 +37,7 @@ Con este primer escaneo queremos construir una visión general del servidor: qu�
 | `9389/tcp`                          | Servicio .NET asociado a funciones de administración de Active Directory.           |
 | `raynex.local`                      | El dominio de Active Directory fue identificado.                                    |
 | `raynex.lab`                        | El nombre del servidor indica que estamos trabajando con el controlador de dominio. |
+
+## Conclusión de esta primera enumeración
+
+El resultado permite establecer con bastante claridad que 10.0.0.46 corresponde a un controlador de dominio de Active Directory. La combinación de DNS, Kerberos, LDAP, Global Catalog, SMB y los servicios RPC es consistente con las funciones que desempeña un Domain Controller.
