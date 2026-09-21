@@ -1,4 +1,4 @@
-## Enumeración 
+# Enumeración 
 Como en todo pentest, el proceso comienza con la recopilación de información sobre el entorno que será evaluado. Antes de analizar los servicios o componentes de Active Directory, es necesario identificar qué sistemas se encuentran disponibles y qué servicios están expuestos.
 
 Para esta primera etapa utilizaremos Nmap, una herramienta ampliamente utilizada para el reconocimiento de redes. A través de ella podremos identificar los puertos abiertos, los servicios disponibles y, en algunos casos, información adicional sobre los sistemas que estamos evaluando.
