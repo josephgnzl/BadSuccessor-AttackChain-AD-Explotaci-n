@@ -15,7 +15,7 @@ La explotación se divide en cinco etapas principales. El acceso inicial parte d
 ```text
 ┌──────────────────────────────────────────────────────────────┐
 │  CREDENCIALES INICIALES                                      │
-│  ecabrera @ pccn.local                                       │
+│  ecabrera @ raynex.lab                                       │
 └──────────────────────────────┬───────────────────────────────┘
                                │
                                ▼
