@@ -17,3 +17,23 @@ Para esta primera etapa utilizaremos Nmap, una herramienta ampliamente utilizada
 | `--min-rate 2000`      | Establece una velocidad mínima de aproximadamente 2000 paquetes por segundo.    |
 | `-oN nmap_initial.txt` | Guarda los resultados en formato de texto en `nmap_initial.txt`.                |
 | `10.0.0.46`            | Dirección IP del objetivo.                                                      |
+
+## Puertos y Servicios Identificados
+
+Con este primer escaneo queremos construir una visión general del servidor: qué puertos están abiertos, qué servicios están disponibles y qué información básica podemos obtener de ellos.
+
+| Evidencia encontrada                | Interpretación                                                                      |
+| ----------------------------------- | ----------------------------------------------------------------------------------- |
+| `53/tcp`                            | El servidor proporciona DNS.                                                        |
+| `88/tcp`                            | Kerberos está disponible, utilizado por Active Directory para autenticación.        |
+| `389/tcp`                           | LDAP permite comunicarse con Active Directory.                                      |
+| `636/tcp`                           | LDAP también está disponible mediante TLS.                                          |
+| `3268/tcp`                          | El servidor proporciona acceso al Global Catalog.                                   |
+| `3269/tcp`                          | Global Catalog disponible mediante TLS.                                             |
+| `445/tcp`                           | SMB está habilitado.                                                                |
+| `135/tcp` + múltiples puertos altos | Existe infraestructura RPC de Windows.                                              |
+| `3389/tcp`                          | RDP está habilitado.                                                                |
+| `5985/tcp`                          | WinRM está disponible.                                                              |
+| `9389/tcp`                          | Servicio .NET asociado a funciones de administración de Active Directory.           |
+| `raynex.local`                      | El dominio de Active Directory fue identificado.                                    |
+| `raynex.lab`                        | El nombre del servidor indica que estamos trabajando con el controlador de dominio. |
