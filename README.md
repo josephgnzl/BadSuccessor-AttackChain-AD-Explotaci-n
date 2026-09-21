@@ -1,4 +1,4 @@
-# BadSuccessor Windows Active Directory :)
+# BadSuccessor Windows Active Directory
 
 ## Fecha: 21/09/2026
 
